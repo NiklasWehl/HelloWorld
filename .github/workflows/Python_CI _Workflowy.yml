@@ -30,4 +30,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest  # Führt die Tests mit 'pytest' aus
+          pytest -v # Führt die Tests mit 'pytest' aus
