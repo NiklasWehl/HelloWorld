@@ -28,4 +28,6 @@ jobs:
           python -m pip install --upgrade pip  # Aktualisiert pip
           pip install -r requirements.txt  # Installiert die Abhängigkeiten aus der 'requirements.txt'
 
-    
+      - name: Run tests
+          run: pytest -v  # Verbose-Ausgabe für mehr Details
+
