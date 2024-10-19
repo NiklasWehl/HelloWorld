@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest  # Der Job läuft auf einer Ubuntu-VM
 
     steps:
+      - name: Generate requirements.txt
+        run: pip freeze > requirements.txt
+        
       - name: Checkout repository
         uses: actions/checkout@v3  # Checkt den Code aus dem Repository aus
 
